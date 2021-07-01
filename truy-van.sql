@@ -46,6 +46,7 @@ Select points.students_id, AVG(points.point) AVG_Students, max(times)
 From points
 group by points.students_id
 
+
 --Thống kê điểm của sinh viên đạt điểm TB 8 trở lên của mỗi khoa, và điểm dưới 5 của mỗi khoa
 -- 8 diem tro len
 Select points.students_id, AVG(points.point) AVG_Students
