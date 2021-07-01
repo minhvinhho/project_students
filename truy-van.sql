@@ -1,18 +1,18 @@
 -- BAI LAM -------------------------------------------------------------------------------
 
 -- tinh diem tb
-Select  students.students_name, points.students_id, AVG(points.point) AVG_Students
-From points
+Select points.students_id, students.students_name, AVG(points.point) AVG_Students
+From points, students
 group by points.students_id
 
 
 --xep hang sinh vien
 Select points.students_id, AVG(points.point) as AVG_Stu,
 CASE
-WHEN .5 THEN 'KhAVG(point) >= 8 THEN 'Gioi'
-WHEN  AVG(point) >= 6a'
-WHEN AVG(point) >= 5 THEN 'Trung Binh'
-ELSE 'Yeu'
+WHEN AVG(point) >= 8 THEN 'Giỏi'
+WHEN  AVG(point) >= 6.5 THEN 'Khá'
+WHEN AVG(point) >= 5 THEN 'Trung Bình'
+ELSE 'Yếu'
 END rank_stu
 From points Group By students_id
 
