@@ -37,10 +37,13 @@ Select points.students_id, students.students_name ,class.class_id ,class.class_n
 From points, class, students
 group by class.class_id
 
---Thông kê điểm thi TB sinh viên có lần thi thứ 2 trở đi
-Select points.students_id, AVG(points.point) AVG_Students, points.times
+--Thông kê điểm thi TB sinh viên có lần thi cuối cùng
+-- Select points.students_id, AVG(points.point) AVG_Students, points.times
+-- From points
+-- where points.times >=2
+-- group by points.students_id
+Select points.students_id, AVG(points.point) AVG_Students, max(times)
 From points
-where points.times >=2
 group by points.students_id
 
 --Thống kê điểm của sinh viên đạt điểm TB 8 trở lên của mỗi khoa, và điểm dưới 5 của mỗi khoa
