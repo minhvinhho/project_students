@@ -11,7 +11,7 @@ class Controller
         require_once "./mvc/views/".$view.".php";
     }
     public function rootUrl(){
-        return "http://localhost:8080/";
+        return "http://testapp.dev/";
     }
     public function backPage($class,$action,$message){
         $_SESSION[$action]=$message;
