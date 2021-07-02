@@ -41,7 +41,9 @@ INSERT INTO `class` (`class_id`, `class_name`, `faculty_id`, `teacher_master_id`
 (1, '12A', 1, 2),
 (4, '12S', 3, 5),
 (5, 'S2', 1, 5),
-(6, 'S5', 2, 5);
+(7, 'N3', 2, 5);
+(8, 'M9', 2, 5);
+(9, 'A1', 2, 5);
 
 -- --------------------------------------------------------
 
@@ -63,6 +65,9 @@ INSERT INTO `faculty` (`faculty_id`, `faculty_name`, `faculty_master_id`) VALUES
 (1, 'IT', 1),
 (2, 'MARKETING', 1),
 (3, 'AI', 1);
+(8, 'BlockChain', 1);
+(4, 'Nodejs', 1);
+(9, 'Laravel', 1);
 
 -- --------------------------------------------------------
 
@@ -106,12 +111,12 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`students_id`, `students_name`, `gender`, `address`, `class_id`) VALUES
-(1, 'Lê Văn A', 'Nam', 'Huế', 1),
-(4, 'Lê Văn D', 'Nam', 'Huế', 4),
-(5, 'Lê Văn E', 'Nữ', 'Huế', 5),
-(6, 'Lê Văn F', 'Nữ', 'Huế', 6),
-(7, 'Lê Văn F', 'Nữ', 'Huế', 1),
-(8, 'Lê Văn F', 'Nữ', 'Đà Nẵng', 4);
+(1, 'Lê Văn A', 'Nam', 'Lăng Cô - Huế', 1),
+(4, 'Lê Văn D', 'Nam', 'Lăng Cô - Huế', 4),
+(5, 'Lê Văn E', 'Nữ', 'Phú Lộc - Huế', 5),
+(6, 'Lê Văn F', 'Nữ', 'Phú Xuân - Huế', 6),
+(7, 'Lê Văn F', 'Nữ', 'Hải Châu - Đà Nẵng', 1),
+(8, 'Lê Văn F', 'Nữ', 'Thanh Khê - Đà Nẵng', 4);
 
 -- --------------------------------------------------------
 
@@ -156,12 +161,12 @@ CREATE TABLE `teacher` (
 --
 
 INSERT INTO `teacher` (`teacher_id`, `teacher_name`, `gender`, `address`) VALUES
-(1, 'Nguyễn Văn A', '1', 'Huế'),
-(2, 'Nguyễn Văn B', '0', 'Đà nẵng'),
-(3, 'Nguyễn Văn C', '0', 'Quảng nam'),
-(4, 'Nguyễn Văn D', '1', 'Hà nội'),
-(5, 'Nguyễn Văn E', '0', 'HCM'),
-(6, 'Nguyễn Văn F', '1', 'Huế');
+(1, 'Nguyễn Tuấn Anh', '1', 'Lăng Cô - Huế'),
+(2, 'Nguyễn Thị Cẩm Vân', '0', 'Thanh Khê - Đà nẵng'),
+(3, 'Trịnh Quang Tấn', '0', 'Hội An - Quảng nam'),
+(4, 'Nguyễn Thị Thu Thảo', '1', 'Bắc Từ Liêm - Hà nội'),
+(5, 'Trần Văn Đàm', '0', 'Quận 9 -HCM'),
+(6, 'Đậu Thị Đậu', '1', 'Bến Xe Trung Tâm Huế');
 
 --
 -- Chỉ mục cho các bảng đã đổ
