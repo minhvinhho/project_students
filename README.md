@@ -8,4 +8,4 @@ Statisial point students, faculty, class,...
 How to run project?
 - Import database !
 - config database, host
-- preview: https://'host'/students
+- preview: https://'host'/student
